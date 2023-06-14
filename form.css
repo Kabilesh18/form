@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(21, 21, 159);
+}
+label{
+    align-items:left;
+}
+.myform{
+    width: 200px;
+    margin: auto;
+    padding: 40px;
+    background: rgb(190, 149, 149);
+    border-radius: 20px; 
+}

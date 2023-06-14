@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="d:\VS\form.css">
+</head>
+<body>
+    <div>
+        <form>
+            <div class="myform">
+            <label><b>USERNAME</b></label>
+            <input type="text" name="uname" id="uname" placeholder="Username"><br><br>
+            <label><b>E-MAIL</b></label>
+            <input type="email" name="email" id="email" placeholder="E-mail"><br><br>
+            <label><b>PASSWORD</b></label>
+            <input type="password" name="password" id="password" placeholder="Password"><br><br>
+            <input type="submit" name="sumbit" onsubmit="validateform()">
+        </div>
+        </form>
+    </div>
+    <script>
+        function validateform(){
+            var uname=document.getElementById("uname").value;
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+            if(uname=="" && email=="" && password==""){
+                alert("Please fill all columns");
+            }
+            else{
+                alert("Welcome");
+            }
+        }
+    </script>
+</body>
+</html>
